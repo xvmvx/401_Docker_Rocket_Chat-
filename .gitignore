@@ -86,6 +86,8 @@ coverage
 
 BK-build-Archive.zip
 BK-build-Archive
+/BK-build-Archive
 BK-runLocal-Archive
+/BK-runLocal-Archive
 node_modules.zip
 data/*

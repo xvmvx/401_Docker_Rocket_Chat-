@@ -736,8 +736,14 @@ const createApis = function _createApis() {
 	API.v1 = createApi(API.v1, {
 		version: 'v1',
 	});
-
 	API.default = createApi(API.default);
+	API.fwork = new APIClass(Object.assign({
+		apiPath: '/',
+		useDefaultAuth: true,
+		prettyJson: process.env.NODE_ENV === 'development',
+		defaultOptionsEndpoint,
+		auth: getUserAuth(),
+	}, {}));
 };
 
 // also create the API immediately
